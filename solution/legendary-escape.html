@@ -1,0 +1,314 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.umdpuzzle.club/solution/legendary-escape by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  
+<title>Solution: META: Legendary Escape</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700"/>
+  <link rel="stylesheet" href="../static/css/skeleton.css">
+  <link rel="stylesheet" href="../static/css/base.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="../static/js/sorttable.js"></script>
+  <script src="../static/js/tray.js"></script>
+  <script src="../static/js/hints.js"></script>
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+  
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+  
+  <nav>
+    <span class="tray">
+      <div class="top-tabs">
+        <a href="../index.html">
+        Home
+        </a>
+        <a href="../rules.html">
+        Rules
+        </a>
+        
+          <a href="../story.html">
+          Story
+          </a>
+        
+        
+          <a class="selected-tab" href="../puzzles.html">
+          Puzzles
+          </a>
+        
+        <a href="../teams.html">
+        Teams
+        </a>
+        <a href="../faq.html">
+        FAQ
+        </a>
+        
+        
+          <a href="../wrapup.html">
+          Wrap-Up
+          </a>
+        
+        <a href="../archive.html">
+        Archive
+        </a>
+      </div>
+      <div class="top-left-actions">
+        
+<a href="../puzzle/legendary-escape.html" class="btn">Back to the puzzle</a>
+
+      </div>
+    </span>
+      <div class="top-right-actions">
+  
+</div>
+</nav>
+
+<div class="content">
+  
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: META: Legendary Escape
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">RIDEONTHEWHEATONDEESCALATOR</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Dawson Do and Grant Yang
+
+    </h4>
+
+    
+    <style>
+  td {
+    padding: 5px 13px;
+  }
+  a.resource {
+    color:inherit;
+    border-bottom: 0px solid #ffe98d;
+    box-shadow: 0px -7px 0px #ffe98d inset;
+    text-decoration-color: #FFFFFF;
+    text-decoration: none !important;
+  }
+</style>
+
+<p>
+  The flavortext of this metapuzzle strongly clues the <a class="resource" href="https://www.wmata.com/schedules/maps/upload/2019-System-Map.pdf">2019 Metro Map</a>. However the map itself will be used later.
+</p>
+
+<p>
+  There are 16 white spaces, which correspond with the sixteen feeder puzzles. To form a “chain,” solves must notice that the “ends” of the answers can link with each other to form the bigrams used for each color. For example, BIOMARKE[RD]ROIDRAZR
+</p>
+
+<p>
+  However, the assignment is not unique unless information from the map is used. Each chain has approximately the same number of letters as the number of stops on the corresponding line. However, the diagram suggests that the bigrams occupy one stop, rather than two. Additionally, the arrows next to each line indicate where to start for each line. Thus, each chain can be uniquely formed such that every letter, except for those in the bigram, corresponds to a stop.
+</p>
+
+<p>
+  The numbers next to each bigram can be used to index into the station that corresponds with the bigram stop. This gives the phrase: TRANSFER PT
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Chain</th>
+<th>Start</th>
+<th>Stop 1</th>
+<th>Stop 2</th>
+<th>Idx 1</th>
+<th>Idx 2</th>
+<th>Letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RD</td>
+<td>biomarkeRDroidrazRDysfunction</td>
+<td>Glenmont</td>
+<td>NoMa-Gallaudet U</td>
+<td>Cleveland Park</td>
+<td>13</td>
+<td>12</td>
+<td>TR</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>streetphotORanintORoughpatch</td>
+<td>Vienna</td>
+<td>Farragut West</td>
+<td>Federal Center SW</td>
+<td>2</td>
+<td>10</td>
+<td>AN</td>
+</tr>
+<tr>
+<td>BL</td>
+<td>insidejoBLawnshruBLevarburton</td>
+<td>Largo Town Center</td>
+<td>Capital South</td>
+<td>Foggy Bottom-GWU</td>
+<td>8</td>
+<td>1</td>
+<td>SF</td>
+</tr>
+<tr>
+<td>GR</td>
+<td>furlonGRecentdeparture</td>
+<td>Greenbelt</td>
+<td>Columbia Heights</td>
+<td></td>
+<td>10</td>
+<td></td>
+<td>E</td>
+</tr>
+<tr>
+<td>YL</td>
+<td>overridesecuritYLaunch</td>
+<td>Huntington</td>
+<td>Georgia Ave-Petworth</td>
+<td></td>
+<td>4</td>
+<td></td>
+<td>R</td>
+</tr>
+<tr>
+<td>SV</td>
+<td>signalSVulgaritieSVowtobritain</td>
+<td>Largo Town Center</td>
+<td>Potomac Ave</td>
+<td>Foggy Bottom-GWU</td>
+<td>1</td>
+<td>8</td>
+<td>PT</td>
+</tr>
+</tbody>
+</table>
+<p>
+  This is a clue to look at the letters that correspond to all the transfer stations:
+  <ul><li>East Falls Church</li><li>Fort Totten</li><li>Gallery Place-Chinatown</li><li>King St-Old Town</li><li>L’Enfant plaza</li><li>Metro Center</li><li>Pentagon</li><li>Rosslyn</li><li>Stadium-Armory</li></ul></p>
+
+<p>
+  These letters reveal how you will make your big getaway: You will <span class="solved-title-answer">RIDE ON THE WHEATON DE-ESCALATOR</span></p>
+
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Chain</th>
+<th>Letters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RD</td>
+<td>bioma[r]keRDro[i][d]razRDysfunction</td>
+<td>RID</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>str[e]etph[o]tORa[n]in[t]ORoug[h]patch</td>
+<td>EONTH</td>
+</tr>
+<tr>
+<td>BL</td>
+<td>insid[e]joBLa[w]ns[h]ruBL[e]v[a]rbur[t]on</td>
+<td>EWHEAT</td>
+</tr>
+<tr>
+<td>GR</td>
+<td>furl[o]nGRece[n]t[d]eparture</td>
+<td>OND</td>
+</tr>
+<tr>
+<td>YL</td>
+<td>ov[e]rrid[e][s]e[c]uritYL[a]unch</td>
+<td>EESCA</td>
+</tr>
+<tr>
+<td>SV</td>
+<td>signa[l]SVulg[a]ri[t]ieSV[o]wtob[r]itain</td>
+<td>LATOR</td>
+</tr>
+</tbody>
+</table>
+
+    
+
+    
+    <hr>
+    <h4>Author&rsquo;s Notes</h4>
+    <p>
+  Dawson: This puzzle was written back in July. When we first came up with an Art Heist theme, I knew I wanted to incorporate the Metro system to the final metapuzzle. I've also always had the idea to make some sort of Metro word-grid, and that worked out here. The [in 2019] part of the flavortext clues the 2019 System Map, but also meta-references a metro-themed metapuzzle in our 2019 puzzlehunt that no teams were able to get to (it wasn't great, but I created an isomorphism of the Metro map, which I think was cool). One of the most difficult parts in constructing the puzzle is the mid-phrase (TRANSFER PT). Since we did not want too many feeder answers, we couldn’t split the lines up much more. This led to the problem of communicating the final extraction with a very limited set of letters. However, it seems this worked for teams.
+</p>
+
+<p>
+  I also originally over-constrained the construction. There is a “canonical” station order for each line that appears on the legend of the System Map. Thankfully, I figured that requiring anyone to use this fact was too difficult/arbitrary, so I added the arrows and loosened that constraint. TRANSFER PT was unachievable with the old constraint, and the next best alternative was METRO MEETS. The canonical Metro line color order (ROBGYS) is still used in this puzzle, which may be a neat detail.
+</p>
+
+<p>
+  Constructing the final answer was fun. The Wheaton (de)escalator was always central to the answer, but fitting Ride On was better than I could have hoped for. I’m glad we were able to fit two Maryland references into the pun. Wheaton station is home to the longest set of escalators in the Western Hemisphere and Ride On is the primary public transportation system in Montgomery County, Maryland, which is where Wheaton station is located. I was very excited to hear stories about non-Maryland/DC natives having personal experiences with the daunting Metro escalators.
+</p>
+
+<p>
+  This puzzle was the third iteration I landed on for a Metro metapuzzle. My first idea semantically related answers to stations, but this led to a puzzle where the only mechanic was figuring out how indexes worked. The answers were also bad. My second idea is almost the concept you see here. It involved chaining the answers, but the bigrams did not indicate any stops in particular by fitting into one stop. Of course, this led to the issue of how solvers would know to look at transfer stations, leading us to where we are today!
+</p>
+
+<p>
+  I noticed during the event that a vast majority of teams did not use a certain boundary constraint while trying to backsolve. To keep all answers as unambiguous as possible for the initial step of chaining, no answer beginning of the chain can start with [drlv] and no answer at the end of the chain can end in [robgys]. VOTINGRIGHTS, for example, could never have been an answer :)
+</p>
+
+<p>
+  Lastly, 13/12 being the first two indices was intentional. There were other options.
+</p>
+    
+
+    
+
+    
+      
+</main>
+
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.umdpuzzle.club/solution/legendary-escape by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:32 GMT -->
+</html>

@@ -1,0 +1,196 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.umdpuzzle.club/puzzle/national-zoo by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  
+<title>National Zoo</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700"/>
+  <link rel="stylesheet" href="../static/css/skeleton.css">
+  <link rel="stylesheet" href="../static/css/base.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="../static/js/sorttable.js"></script>
+  <script src="../static/js/tray.js"></script>
+  <script src="../static/js/hints.js"></script>
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+  
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+  
+  <nav>
+    <span class="tray">
+      <div class="top-tabs">
+        <a href="../index.html">
+        Home
+        </a>
+        <a href="../rules.html">
+        Rules
+        </a>
+        
+          <a href="../story.html">
+          Story
+          </a>
+        
+        
+          <a class="selected-tab" href="../puzzles.html">
+          Puzzles
+          </a>
+        
+        <a href="../teams.html">
+        Teams
+        </a>
+        <a href="../faq.html">
+        FAQ
+        </a>
+        
+        
+          <a href="../wrapup.html">
+          Wrap-Up
+          </a>
+        
+        <a href="../archive.html">
+        Archive
+        </a>
+      </div>
+      <div class="top-left-actions">
+        
+
+
+
+<a href="../post-hunt-solve/national-zoo.html" class="btn">Check your answer spoiler-free</a>
+
+
+<a href="../solution/national-zoo.html" class="btn">View solution</a>
+<a href="../stats/national-zoo.html" class="btn">Stats</a>
+
+<!--  -->
+
+      </div>
+    </span>
+      <div class="top-right-actions">
+  
+</div>
+</nav>
+
+<div class="content">
+  
+<style>
+  /* body {
+      background-image: linear-gradient(#fff, #2765c2);
+  } */
+  .content{
+    padding-top: 2.5rem;
+    background-color: white;
+  }
+</style>
+
+<h1>
+    
+    National Zoo
+    
+    
+</h1>
+
+<main>
+    
+    <style>
+  .images {
+    width: 50%;
+  }
+  .images td {
+    text-align: left;
+  }
+  .pics {
+    width: 80%;
+  }
+  .grid td {
+    vertical-align: center;
+    text-align: center;
+    font-size: 100%;
+    box-sizing: border-box;
+    width: 0.3in;
+    height: 0.3in;
+    padding: 0;
+    border: 1px solid black;
+  }
+  .grid td.none {
+    border: none;
+  }
+  .grid td.tb {
+    border-top: 3px solid black;
+  }
+  .grid td.bb {
+    border-bottom: 3px solid black;
+  }
+  .grid td.lb {
+    border-left: 3px solid black;
+  }
+  .grid td.rb {
+    border-right: 3px solid black;
+  }
+  .grid td.shaded{
+    color: black;
+    background-color: #777;
+  }
+  .grid td.water{
+    color: black;
+    background-color: #c9daf8;
+  }
+  a.resource {
+    color:inherit;
+    border-bottom: 0px solid #ffe98d;
+    box-shadow: 0px -7px 0px #ffe98d inset;
+    text-decoration-color: #FFFFFF;
+    text-decoration: none !important;
+  }
+</style>
+
+<p>
+  It’s always a challenge to find where the animals are.
+</p>
+
+<h3>Snake Pit</h3>
+
+<p>
+Place snakes and identify their heads such that:
+<ul><li>No snake orthogonally touches another snake of the same length</li><li>Snakes are one-cell-wide paths that do not touch themselves, even diagonally</li><li>The snakes have a head and a tail (there are no one-cell snakes)</li><li>No snake head can share an edge with another snake’s head or tail</li><li>Numbers present indicate the length of the snake in that cell</li><li>All cells are occupied by exactly one snake</li></ul></p>
+
+<h4>Example and Solution</h4>
+
+<p>(emoji represent the heads of each snake)
+<table class="grid"><tr><td class="lb tb"></td><td class="tb">4</td><td class="tb"></td><td class="tb"></td><td class="tb rb">4</td><td class="none"></td><td class="none"></td><td class="lb tb rb">6</td><td class="tb">4</td><td class="tb">4</td><td class="tb">4</td><td class="tb rb">🐍</td></tr><tr><td class="lb"></td><td></td><td></td><td>3</td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="lb rb">6</td><td class="tb">10</td><td class="tb rb">10</td><td class="tb">🐍</td><td class="tb rb">3</td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="lb">6</td><td class="tb rb">6</td><td>10</td><td class="tb rb">10</td><td class="rb">3</td></tr><tr><td class="lb"></td><td></td><td>6</td><td></td><td class="rb">2</td><td class="none"></td><td class="none"></td><td class="lb tb rb">🐍</td><td>6</td><td class="tb rb">🐍</td><td class="rb">10</td><td class="tb rb">2</td></tr><tr><td class="lb bb"></td><td class="bb"></td><td class="bb"></td><td class="bb">10</td><td class="bb rb"></td><td class="none"></td><td class="none"></td><td class="lb bb">10</td><td class="tb bb">10</td><td class="tb bb">10</td><td class="bb rb">10</td><td class="bb rb">🐍</td></tr></table><table class="grid"><tr><td class="lb tb"></td><td class="tb">4</td><td class="tb">4</td><td class="tb"></td><td class="tb"></td><td class="tb"></td><td class="tb"></td><td class="tb"></td><td class="tb">6</td><td class="tb rb"></td></tr><tr><td class="lb">6</td><td>6</td><td></td><td></td><td></td><td>4</td><td></td><td></td><td>7</td><td class="rb">6</td></tr><tr><td class="lb">6</td><td></td><td>9</td><td></td><td>9</td><td></td><td>2</td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td>10</td><td>10</td><td></td><td>2</td><td>10</td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td>9</td><td>9</td><td>10</td><td>4</td><td></td><td></td><td>8</td><td class="rb"></td></tr><tr><td class="lb"><td>7</td><td></td><td></td><td>10</td><td>10</td><td>10</td><td>4</td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td>7</td><td>7</td><td></td><td>4</td><td>4</td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td>7</td><td></td><td>6</td><td></td><td>3</td><td></td><td class="rb">8</td></tr><tr><td class="lb">3</td><td>3</td><td></td><td></td><td>7</td><td></td><td></td><td></td><td>8</td><td class="rb">8</td></tr><tr><td class="lb bb"></td><td class="bb">2</td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb">4</td><td class="bb">4</td><td class="rb bb"></td></tr></table><h3>Penguin Floes</h3><p>
+Identify ice floes such that:
+<ul><li>No floes share an edge</li><li>Each floe has exactly one number, and the number of cells in the floe is equal to that number</li><li>All water cells are edge-connected</li><li>No 2x2 square of water cells is present</li></ul></p><p>
+At the same time, place penguins such that:
+<ul><li>There is exactly one penguin on each ice floe</li><li>Each penguin is on the cell of its floe whose 8 surrounding cells contain the longest continuous stretch of water</li></ul></p><h4>Example and Solution</h4><table class="grid"><tr><td class="lb tb"></td><td class="tb"></td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td><td class="none"></td><td class="none"></td><td class="lb tb shaded"></td><td class="tb shaded"></td><td class="tb shaded"></td><td class="tb shaded"></td><td class="tb rb shaded"></td></tr><tr><td class="lb"></td><td></td><td>4</td><td></td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="lb shaded"></td><td></td><td></td><td></td><td class="rb shaded"></td></tr><tr><td class="lb">1</td><td></td><td></td><td></td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="lb">🐧</td><td class="shaded"></td><td class="shaded"></td><td><b>🐧</b></td><td class="rb shaded"></td></tr><tr><td class="lb"></td><td>1</td><td></td><td></td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="lb shaded"></td><td>🐧</td><td class="shaded"></td><td class="shaded"></td><td class="shaded rb"></td></tr><tr><td class="lb bb"></td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb rb">2</td><td class="none"></td><td class="none"></td><td class="lb bb shaded"></td><td class="bb shaded"></td><td class="bb shaded"></td><td class="bb">🐧</td><td class="bb rb"></td></tr></table><table class="grid"><tr><td class="lb tb"></td><td class="tb"></td><td class="tb">4</td><td class="tb"></td><td class="tb"></td><td class="tb">3</td><td class="tb"></td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb">8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>6</td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td>6</td><td></td><td></td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb">5</td><td></td><td></td><td></td><td></td><td></td><td>4</td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb bb"></td><td class="bb">7</td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb">3</td><td class="bb"></td><td class="rb bb"></td></tr></table><h3>Fish Tanks</h3><p><ul><li>Each region represents an aquarium that can be filled with water</li><li>Within an aquarium, the water reaches a certain number of cells up from its bottommost cell(s)</li><li>Shade cells to represent a water-filled cell, blank to represent an empty cell</li><li>Numbers on the outside represent the number of shaded/water-filled cells</li></ul></p><p>
+At the same time, place fish in the tanks such that:
+<ul><li>There are two fish in each aquarium, row, and column</li><li>All fish are within the water</li></ul></p><h4>Example and Solution</h4><table class="grid"><tr><td class="none"></td><td class="none">4</td><td class="none"></td><td class="none">2</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none">4</td><td class="none"></td><td class="none">2</td><td class="none"></td></tr><tr><td class="lb tb"></td><td class="tb rb"></td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td><td class="none"></td><td class="none"></td><td class="water lb tb">🐟</td><td class="water tb rb">🐟</td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td></tr><tr><td class="lb rb"></td><td class="tb rb"></td><td class="rb"></td><td class="tb rb"></td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="water lb rb"></td><td class="tb rb"></td><td class="water rb">🐟</td><td class="tb rb"></td><td class="water rb">🐟</td></tr><tr><td class="lb rb"></td><td></td><td class="rb tb"></td><td class="rb"></td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="water lb rb"></td><td class="water">🐟</td><td class="water rb tb">🐟</td><td class="rb"></td><td class="water rb"></td></tr><tr><td class="lb rb"></td><td></td><td class="rb"></td><td></td><td class="rb tb"></td><td class="none"></td><td class="none"></td><td class="water lb rb"></td><td class="water"></td><td class="water rb"></td><td class="water">🐟</td><td class="water rb tb">🐟</td></tr><tr><td class="lb bb tb"></td><td class="bb tb"></td><td class="bb tb"></td><td class="bb tb"></td><td class="bb rb tb"></td><td class="none"></td><td class="none"></td><td class="water lb bb tb">🐟</td><td class="water bb tb"></td><td class="water bb tb"></td><td class="water bb tb">🐟</td><td class="water bb rb tb"></td></tr></table><table class="grid"><tr><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none">4</td><td class="none">4</td><td class="none"></td><td class="none">6</td><td class="none"></td><td class="none"></td></tr><tr><td class="none"></td><td class="lb tb rb"></td><td class="tb"></td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td><td class="tb"></td><td class="tb rb"></td></tr><tr><td class="none"></td><td class="lb"></td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td><td class="rb"></td><td></td><td></td><td class="rb"></td><td></td><td class="rb"></td></tr><tr><td class="none"></td><td class="lb"></td><td class="rb"></td><td class="tb"></td><td class="tb"></td><td class="rb"></td><td></td><td class="rb"></td><td class="tb"></td><td></td><td class="rb"></td></tr><tr><td class="none"></td><td class="lb rb"></td><td class="tb"></td><td></td><td class="rb"></td><td class="tb"></td><td></td><td></td><td class="tb rb"></td><td></td><td class="rb"></td></tr><tr><td class="none"></td><td class="lb tb"></td><td class="tb rb"></td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td><td></td><td class="rb"></td><td class="tb"></td><td></td><td class="rb"></td></tr><tr><td class="none"></td><td class="lb"></td><td class="rb"></td><td class="rb"></td><td class="tb rb"></td><td class="rb"></td><td class="tb"></td><td class="tb"></td><td class="tb rb"></td><td class="rb"></td><td class="tb rb"></td></tr><tr><td class="none"></td><td class="lb rb"></td><td class="tb"></td><td class="rb"></td><td class="rb"></td><td class="tb"></td><td></td><td></td><td class="rb"></td><td class="rb"></td><td class="rb"></td></tr><tr><td class="none">7</td><td class="lb"></td><td class="tb rb"></td><td class="rb"></td><td></td><td class="tb"></td><td class="tb rb"></td><td></td><td></td><td class="tb rb"></td><td class="rb"></td></tr><tr><td class="none">9</td><td class="lb"></td><td class="rb"></td><td></td><td class="tb rb"></td><td class="tb rb"></td><td></td><td class="tb rb"></td><td class="tb"></td><td class="tb"></td><td class="rb"></td></tr><tr><td class="none"></td><td class="lb bb"></td><td class="bb rb"></td><td class="bb"></td><td class="bb rb"></td><td class="bb"></td><td class="bb tb rb"></td><td class="bb"></td><td class="bb tb rb"></td><td class="bb"></td><td class="bb rb"></td></tr></table><h3>Bat cave</h3><p><ul><li>Shade some cells to leave behind an unshaded cave</li><li>Numbers cannot be shaded</li><li>The cave is edge-connected</li><li>All shaded regions are edge-connected to the boundary</li><li>The number indicates the cells visible from there (horizontally and vertically, including self)</li></ul></p><p>
+At the same time, place bats in the cave such that:
+<ul><li>Each cell in the cave can be seen by at least one bat</li><li>No bat can see another bat</li><li>No bat occupies a number cell</li></ul></p><h4>Example and Solution</h4><table class="grid"><tr><td class="lb tb"></td><td class="tb"></td><td class="tb"></td><td class="tb">3</td><td class="tb rb"></td><td class="none"></td><td class="none"></td><td class="lb tb"></td><td class="tb shaded"></td><td class="tb"></td><td class="tb">3</td><td class="tb rb">🦇</td><tr><td class="lb">7</td><td></td><td></td><td></td><td class="rb">2</td><td class="none"></td><td class="none"></td><td class="lb">7</td><td></td><td>🦇</td><td class="shaded"></td><td class="rb">2</td><tr><td class="lb"></td><td></td><td></td><td></td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="lb"></td><td class="shaded"></td><td class="shaded"></td><td class="shaded"></td><td class="rb shaded"></td><tr><td class="lb"></td><td>3</td><td></td><td></td><td class="rb"></td><td class="none"></td><td class="none"></td><td class="lb">🦇</td><td>3</td><td></td><td class="shaded"></td><td class="shaded rb"></td><tr><td class="lb bb"></td><td class="bb"></td><td class="bb"></td><td class="bb">2</td><td class="bb rb"></td><td class="none"></td><td class="none"></td><td class="lb bb"></td><td class="shaded bb"></td><td class="bb">🦇</td><td class="bb">2</td><td class="shaded bb rb"></td></table><table class="grid"><tr><td class="lb tb"></td><td class="tb">2</td><td class="tb"></td><td class="tb"></td><td class="tb"></td><td class="tb">3</td><td class="tb"></td><td class="tb"></td><td class="tb">2</td><td class="tb rb"></td></tr><tr><td class="lb">7</td><td></td><td></td><td>9</td><td>8</td><td></td><td></td><td></td><td></td><td class="rb">9</td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td></td><td></td><td>3</td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td>3</td><td></td><td>5</td><td></td><td></td><td></td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td>10</td><td></td><td></td><td>4</td><td></td><td>7</td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td>3</td><td></td><td></td><td></td><td></td><td>4</td><td>6</td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td>7</td><td></td><td></td><td></td><td>3</td><td></td><td></td><td class="rb"></td></tr><tr><td class="lb"></td><td></td><td></td><td></td><td>6</td><td></td><td></td><td></td><td>3</td><td class="rb">10</td></tr><tr><td class="lb bb">2</td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb"></td><td class="bb">5</td><td class="bb"></td><td class="rb bb"></td></tr></table><hr style="height: 1px; color:darkgray"><p>🐍+🐧</p><p>🐟+🦇</p><table class="grid"><tr><td class="lb tb">T</td><td class="tb">M</td><td class="tb">L</td><td class="tb">C</td><td class="tb">B</td><td class="tb">A</td><td class="tb">G</td><td class="tb">P</td><td class="tb">H</td><td class="tb rb">U</td></tr><tr><td class="lb">A</td><td>T</td><td>E</td><td>E</td><td>H</td><td>S</td><td>U</td><td>G</td><td>C</td><td class="rb">H</td></tr><tr><td class="lb">Y</td><td>E</td><td>R</td><td>E</td><td>E</td><td>O</td><td>E</td><td>A</td><td>F</td><td class="rb">G</td></tr><tr><td class="lb">N</td><td>L</td><td>T</td><td>U</td><td>A</td><td>M</td><td>T</td><td>T</td><td>U</td><td class="rb">G</td></tr><tr><td class="lb">U</td><td>R</td><td>L</td><td>W</td><td>B</td><td>S</td><td>I</td><td>C</td><td>T</td><td class="rb">E</td></tr><tr><td class="lb">W</td><td>D</td><td>E</td><td>F</td><td>P</td><td>F</td><td>O</td><td>O</td><td>L</td><td class="rb">B</td></tr><tr><td class="lb">F</td><td>E</td><td>F</td><td>S</td><td>I</td><td>A</td><td>U</td><td>W</td><td>R</td><td class="rb">A</td></tr><tr><td class="lb">P</td><td>F</td><td>F</td><td>Y</td><td>H</td><td>M</td><td>R</td><td>S</td><td>L</td><td class="rb">A</td></tr><tr><td class="lb">R</td><td>I</td><td>C</td><td>T</td><td>O</td><td>P</td><td>U</td><td>P</td><td>R</td><td class="rb">W</td></tr><tr><td class="lb bb">I</td><td class="bb">O</td><td class="bb">C</td><td class="bb">C</td><td class="bb">P</td><td class="bb">S</td><td class="bb">E</td><td class="bb">U</td><td class="bb">Y</td><td class="rb bb">S</td></tr></table></p>
+</main>
+
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.umdpuzzle.club/puzzle/national-zoo by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:21 GMT -->
+</html>

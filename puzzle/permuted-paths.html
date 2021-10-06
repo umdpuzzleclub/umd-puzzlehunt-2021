@@ -1,0 +1,192 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.umdpuzzle.club/puzzle/permuted-paths by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  
+<title>Permuted Paths</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700"/>
+  <link rel="stylesheet" href="../static/css/skeleton.css">
+  <link rel="stylesheet" href="../static/css/base.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="../static/js/sorttable.js"></script>
+  <script src="../static/js/tray.js"></script>
+  <script src="../static/js/hints.js"></script>
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+  
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+  
+  <nav>
+    <span class="tray">
+      <div class="top-tabs">
+        <a href="../index.html">
+        Home
+        </a>
+        <a href="../rules.html">
+        Rules
+        </a>
+        
+          <a href="../story.html">
+          Story
+          </a>
+        
+        
+          <a class="selected-tab" href="../puzzles.html">
+          Puzzles
+          </a>
+        
+        <a href="../teams.html">
+        Teams
+        </a>
+        <a href="../faq.html">
+        FAQ
+        </a>
+        
+        
+          <a href="../wrapup.html">
+          Wrap-Up
+          </a>
+        
+        <a href="../archive.html">
+        Archive
+        </a>
+      </div>
+      <div class="top-left-actions">
+        
+
+
+
+<a href="../post-hunt-solve/permuted-paths.html" class="btn">Check your answer spoiler-free</a>
+
+
+<a href="../solution/permuted-paths.html" class="btn">View solution</a>
+<a href="../stats/permuted-paths.html" class="btn">Stats</a>
+
+<!--  -->
+
+      </div>
+    </span>
+      <div class="top-right-actions">
+  
+</div>
+</nav>
+
+<div class="content">
+  
+<style>
+  /* body {
+      background-image: linear-gradient(#fff, #2765c2);
+  } */
+  .content{
+    padding-top: 2.5rem;
+    background-color: white;
+  }
+</style>
+
+<h1>
+    
+    Permuted Paths
+    
+    
+</h1>
+
+<main>
+    
+    <style>
+  .grid {
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.arrow{
+  border: 1px solid gray;
+}
+  .grid td {
+    vertical-align: center;
+    text-align: center;
+    font-size: 100%;
+    box-sizing: border-box;
+    width: 0.3in;
+    height: 0.3in;
+    padding: 0;
+  }
+  .grid td.none {
+    border: none;
+  }
+  .grid td.tb {
+    border-top: 3px solid black;
+  }
+  .grid td.bb {
+    border-bottom: 3px solid black;
+  }
+  .grid td.lb {
+    border-left: 3px solid black;
+  }
+  .grid td.rb {
+    border-right: 3px solid black;
+  }
+  .grid td.red{
+    color: white;
+    background-color: #e70503;
+  }
+  .grid td.blue{
+    color: white;
+    background-color: #0300ad;
+  }
+  .grid td.yellow{
+    color: black;
+    background-color: #fdde06;
+  }
+  .grid td.white{
+    color: black;
+    background-color: #eaefe9;
+  }
+  a.resource {
+    color:inherit;
+    border-bottom: 0px solid #ffe98d;
+    box-shadow: 0px -7px 0px #ffe98d inset;
+    text-decoration-color: #FFFFFF;
+    text-decoration: none !important;
+  }
+</style>
+
+<p>
+  Oh no! A Mondrian painting fell off the wall. Good thing you know all Mondrians consist of same-colored (including white) rectangles with at least 2 cells.
+</p>
+
+<p>
+  Behind the Mondrian was a similarly-sized piece with the inscription: <em>Start at the star, and never stop following an instruction.</em></p>
+
+<p><a class="resource" href="http://www.umdpuzzle.club/static/puzzle_resources/permuted-paths/permutedpaths.zip" download="permutedpaths.zip">Download pieces as images in a .zip file (~29 KB)</a></p>
+
+<table class="grid"><tr><td class="yellow tb lb bb">C</td><td class="yellow tb rb">L</td><td class="none"></td><td class="none"></td><td class="red tb rb lb">T</td><td class="none"></td><td class="red tb lb">S</td><td class="red tb rb bb">E</td><td class="none"></td><td class="white tb bb lb">Y</td><td class="white tb bb">D</td><td class="white tb rb">W</td><td class="none"></td><td class="none"></td><td class="none"></td></tr><tr><td class="none"></td><td class="yellow lb">F</td><td class="blue tb rb bb">E</td><td class="none"></td><td class="red rb lb">E</td><td class="none"></td><td class="red rb lb">R</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="blue lb bb">D</td><td class="blue tb rb bb">O</td><td class="none"></td><td class="none"></td></tr><tr><td class="none"></td><td class="yellow rb bb lb">A</td><td class="none"></td><td class="none"></td><td class="white rb lb">I</td><td class="none"></td><td class="red rb lb">I</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td></tr><tr><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="white rb lb">N</td><td class="none"></td><td class="white lb bb rb">S</td><td class="none"></td><td class="yellow tb lb bb">L</td><td class="yellow tb">R</td><td class="yellow tb rb">R</td><td class="none"></td><td class="yellow tb lb bb">C</td><td class="yellow tb">E</td><td class="white tb rb bb">D</td></tr><tr><td class="white lb tb">E</td><td class="white tb bb">R</td><td class="yellow tb rb">S</td><td class="none"></td><td class="white rb lb bb">T</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="white lb bb">C</td><td class="white bb rb">G</td><td class="none"></td><td class="none"></td><td class="yellow rb lb">T</td><td class="none"></td></tr><tr><td class="blue rb lb bb">A</td><td class="none"></td><td class="blue bb lb rb">O</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="red lb tb">Q</td><td class="red tb bb rb">Y</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="yellow rb lb bb">T</td><td class="none"></td></tr><tr><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="red tb lb">Y</td><td class="red bb rb">B</td><td class="none"></td><td class="none"></td><td class="blue tb rb lb">R*</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td></tr><tr><td class="white tb lb">A</td><td class="red tb bb">A</td><td class="red tb bb rb">X</td><td class="none"></td><td class="none"></td><td class="red bb rb lb">M</td><td class="none"></td><td class="none"></td><td class="blue lb tb bb">R</td><td class="blue">E</td><td class="blue rb tb bb">V</td><td class="none"></td><td class="none"></td><td class="white tb lb">L</td><td class="red tb rb bb">S</td></tr><tr><td class="blue rb lb">N</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="blue bb lb rb">R</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="white rb lb">W</td><td class="none"></td></tr><tr><td class="blue bb rb lb">A</td><td class="none"></td><td class="red tb lb bb">P</td><td class="white tb">N</td><td class="white tb bb">O</td><td class="white tb rb bb">W</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="white tb bb lb">W</td><td class="white rb bb">U</td><td class="none"></td></tr><tr><td class="none"></td><td class="none"></td><td class="none"></td><td class="blue rb lb bb">U</td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td><td class="none"></td></tr></table>
+
+<table class="grid arrow"><tr><td>↘</td><td>→</td><td>→</td><td>↑</td><td>→</td><td>↖</td><td>↗</td><td>→</td><td>↖</td><td>↘</td></tr><tr><td>←</td><td>↓</td><td>↓</td><td>↘</td><td>↙</td><td>↘</td><td>←</td><td>↓</td><td>↘</td><td>↗</td></tr><tr><td>←</td><td>↗</td><td>↖</td><td>↓</td><td>↓*</td><td>↓</td><td>←</td><td>↙</td><td>↓</td><td>→</td></tr><tr><td>←</td><td>→</td><td>↙</td><td>↓</td><td>→</td><td>↘</td><td>←</td><td>→</td><td>←</td><td>↗</td></tr><tr><td>←</td><td>↖</td><td>↘</td><td>←</td><td>↓</td><td>←</td><td>↘</td><td>↙</td><td>↑</td><td>→</td></tr><tr><td>↙</td><td>↗</td><td>↓</td><td>↓</td><td>↖</td><td>↑</td><td>←</td><td>←</td><td>↓</td><td>→</td></tr></table>
+</main>
+
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.umdpuzzle.club/puzzle/permuted-paths by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:24 GMT -->
+</html>

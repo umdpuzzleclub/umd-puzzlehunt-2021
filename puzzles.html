@@ -1,0 +1,1060 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.umdpuzzle.club/puzzles by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  
+  <title>UMD Puzzlehunt</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700"/>
+  <link rel="stylesheet" href="static/css/skeleton.css">
+  <link rel="stylesheet" href="static/css/base.css">
+  <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="static/js/sorttable.js"></script>
+  <script src="static/js/tray.js"></script>
+  <script src="static/js/hints.js"></script>
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="static/images/favicon.ico" type="image/vnd.microsoft.icon">
+  
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+  
+  <nav>
+    <span class="tray">
+      <div class="top-tabs">
+        <a href="index.html">
+        Home
+        </a>
+        <a href="rules.html">
+        Rules
+        </a>
+        
+          <a href="story.html">
+          Story
+          </a>
+        
+        
+          <a class="selected-tab" href="puzzles.html">
+          Puzzles
+          </a>
+        
+        <a href="teams.html">
+        Teams
+        </a>
+        <a href="faq.html">
+        FAQ
+        </a>
+        
+        
+          <a href="wrapup.html">
+          Wrap-Up
+          </a>
+        
+        <a href="archive.html">
+        Archive
+        </a>
+      </div>
+      <div class="top-left-actions">
+        
+      </div>
+    </span>
+      <div class="top-right-actions">
+  
+</div>
+</nav>
+
+<div class="content">
+  
+<style>
+.tutorial { border: 1px solid black; padding: 1em; }
+.victory { text-align: center; font-weight: bold; }
+.victory a {
+    background: #ffe98d;
+}
+
+div#map {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#map img.base {
+    position: absolute;
+}
+
+div#map div.p {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 100%;
+    font-weight: 700;
+    color: #f8f8f8;
+    text-align: center;
+    text-shadow: 2px 0 3px #00000066, -2px 0 3px #00000066, 0 2px 3px #00000066, 0 -2px 3px #00000066;
+}
+
+div#map div.p: hover{
+  color: #000000;
+  background-color: #ffe98d;
+}
+
+.puzzle-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.puzzle-tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 120%;
+  transition: 0.3s;
+  font-family: 'Fira Sans Extra Condensed';
+  font-weight: 500;
+}
+
+.tablinks {
+  margin-bottom: 0;
+}
+
+.puzzle-tab button:hover {
+  background-color: #ddd;
+}
+
+.puzzle-tab button.active {
+  background-color: #ccc;
+  font-weight: 500;
+}
+
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 5px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 80%;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+table {
+  margin-bottom: 1rem;
+}
+td {
+  border-bottom: none;
+}
+th {
+  text-align: left;
+}
+a.resource {
+  color:inherit;
+  border-bottom: 0px solid #ffe98d;
+  box-shadow: 0px -7px 0px #ffe98d inset;
+  text-decoration-color: #FFFFFF;
+  text-decoration: none !important;
+}
+</style>
+
+
+<style>
+  body {
+      background-color: white;
+  }
+</style>
+
+
+
+
+<h1>Puzzles</h1>
+
+
+
+
+
+<div class="puzzle-tab" style="box-shadow: 12px 12px;">
+  
+    
+    
+        <button class="tablinks" id="NatMall" onclick="openPage(event, 'Mall')">National Mall</button>
+      
+    
+  
+    
+    
+        <button class="tablinks" id="sdfghms" onclick="openPage(event, 'NGA')">National Gallery of Art</button>
+      
+    
+  
+    
+    
+      <button class="tablinks" onclick="window.location='puzzle/legendary-escape.html';">Getaway</button>
+      
+    
+  
+    
+  
+</div>
+
+
+  
+    
+    <div id="Mall" class="tabcontent">
+    <div id="map" style="height:81.5vw;max-height:1200px;top:0%;left:0%;">
+    <img src='http://www.umdpuzzle.club/static/images/puzzlepage/backgroundfdg3254.png' class="base" style="width:100%; box-shadow: 12px 12px;">
+      
+        
+        
+        
+        
+        
+        
+          <div class ="p" style="left: 59%; top: 77%; width: 35%; height: 10%;z-index:2; pointer-events:none;">National Air and Space Museum
+            <br>
+            
+          </div>
+            <a href="puzzle/air-and-space.html"><img src='http://www.umdpuzzle.club/static/images/puzzlepage/aas.png' style="position:absolute;width:55%;top:68%;left:49%;z-index:1;"></a>
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+          <div class ="p" style="left: 5%; top: 44%; width: 35%; height: 10%;z-index:2; pointer-events:none;">National Museum of American History
+            <br>
+            
+          </div>
+            <a href="puzzle/american-history.html"><img src='http://www.umdpuzzle.club/static/images/puzzlepage/ah.png' style="position:absolute;width:37%;top:33%;left:3%;z-index:1;"></a>
+        
+        
+      
+        
+        
+        
+        
+          <div class ="p" style="left: 0%; top: 14%; width: 25%; height: 10%;z-index:2; pointer-events:none;">National Zoo
+            <br>
+            
+          </div>
+            <a href="puzzle/national-zoo.html"><img src='http://www.umdpuzzle.club/static/images/puzzlepage/nz.png' style="position:absolute;width:18%;top:-1%;left:-2%;z-index:1;"></a>
+        
+        
+        
+        
+        
+      
+        
+        
+          <div class ="p" style="left: 43%; top: 62%; width: 35%; height: 10%;z-index:2; pointer-events:none;">National Museum of Natural History
+            <br>
+            
+          </div>
+            <a href="puzzle/natural-history.html"><img src='http://www.umdpuzzle.club/static/images/puzzlepage/nh.png' style="position:absolute;width:44%;top:48%;left:39%;z-index:1;"></a>
+        
+        
+        
+        
+        
+        
+        
+      
+        
+          <div class ="p" style="left: 2%; top: 73%; width: 30%; height: 10%;z-index:2; pointer-events:none;">National Museum of African American History and Culture
+            <br>
+            
+          </div>
+            <a href="puzzle/african-american-history.html"><img src='http://www.umdpuzzle.club/static/images/puzzlepage/aahc.png' style="position:absolute;width:30%;top:62%;left:1%;z-index:1;"></a>
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+          <div class ="p" style="left: 60%; top: 10%; width: 25%; height: 10%;z-index:2; pointer-events:none;">National Postal Museum
+            <br>
+            
+          </div>
+            <a href="puzzle/postal-museum.html"><img src='http://www.umdpuzzle.club/static/images/puzzlepage/np.png' style="position:absolute;width:35%;top:0%;left:54%;z-index:1;"></a>
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+          <div class ="p" style="left: 70%; top: 44%; width: 25%; height: 10%;z-index:2; pointer-events:none;">National Museum of the American Indian
+            <br>
+            
+          </div>
+            <a href="puzzle/american-indian.html"><img src='http://www.umdpuzzle.club/static/images/puzzlepage/ai.png' style="position:absolute;width:35%;top:27%;left:69%;z-index:1;"></a>
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          <div class ="p" style="left: 41%; top: 26%; width: 25%; height: 10%;z-index:2; pointer-events: none">META: National Gallery of Art
+            <br>
+            
+          </div>
+            <a href="puzzle/national-gallery-of-art.html"><img src='http://www.umdpuzzle.club/static/images/puzzlepage/nga.png' style="position:absolute;width:60%;top:12%;left:23%;z-index:1;"></a>
+        
+      
+    </div>
+    </div>
+    
+  
+
+  
+    
+    
+    <div id="NGA" class="tabcontent">
+    <div id="map" style="height:81.5vw;max-height:1200px;top:0%;left:0%;">
+    <img src='http://www.umdpuzzle.club/static/images/puzzlepage/mapdfsgw45s2.png' class="base" style="width:100%;  box-shadow: 12px 12px;">
+      
+        
+          <a href="puzzle/new-york-counterpoint.html"><div class ="p" style="left: 4%; top: 9%; width: 25%; height: 7%;z-index:2;">New York Counterpoint
+            <br>
+            
+          </div>
+          </a>
+          <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/nycou563.png' style="position:absolute;left: 28%; top: 12%;z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        <a href="puzzle/the-runaround-puzzle.html"><div class ="p" style="left: 55%; top: 52%; width: 25%; height: 7%;z-index:2;">The Runaround Puzzle
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/run7698.png' style="position:absolute;left: 46%; top: 55.5%; ;z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        <a href="puzzle/mortal-snake.html"><div class ="p" style="left: 41%; top: 38%; width: 20%; height: 7%;z-index:2;">Mortal Snake
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/morta132.png' style="position:absolute;left: 53%; top: 31.5%; z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        <a href="puzzle/delightfully-devilish.html"><div class ="p" style="left: 65%; top: 7%; width: 25%; height: 7%;z-index:2;">Delightfully Devilish
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/ddsadfsa.png' style="position:absolute;left: 66.5%; top: 10.5%; z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        <a href="puzzle/recycled.html"><div class ="p" style="left: 1%; top: 25%; width: 15%; height: 7%;z-index:2;">Recycled
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/rec4536.png' style="position:absolute;left: 14%; top: 28%; z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/tactile-inference.html"><div class ="p" style="left: 70%; top: 81%; width: 25%; height: 7%;z-index:2;">Tactile Inference
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/tac45768.png' style="position:absolute;left: 45%; top: 73%; z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/off-by-one-error.html"><div class ="p" style="left: 82%; top: 20%; width: 20%; height: 7%;z-index:2;">Off-by-One Error
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/obo242.png' style="position:absolute;left: 78%; top: 23%; z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/evening-posts.html"><div class ="p" style="left: 1%; top: 37%; width: 16%; height: 7%;z-index:2;">Evening Posts
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/even867.png' style="position:absolute;left: 17%; top: 36%; z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/splitting-at-the-seams.html"><div class ="p" style="left: 28%; top: 56%; width: 25%; height: 7%;z-index:2;">Splitting at the Seams
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/splittt1324.png' style="position:absolute;left: 27%; top: 60%; z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/blasted.html"><div class ="p" style="left: 77%; top: 38.5%; width: 15%; height: 7%;z-index:2;">BLASTED
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/blas235.png' style="position:absolute;left: 63%; top: 33%; z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/severely-mangled-semantics.html"><div class ="p" style="left: 24%; top: 4%; width: 25%; height: 7%;z-index:2;">Severely Mangled Semantics
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/sever5678.png' style="position:absolute;left: 28.5%; top: 9%; z-index:1;">
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/viewfinder.html"><div class ="p" style="left: 0%; top: 64%; width: 20%; height: 7%;z-index:2;">Viewfinder
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/vie2235.png' style="position:absolute;left: 16%; top: 64%; z-index:1;">
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/saintly-professions.html"><div class ="p" style="left: 55%; top: 45%; width: 20%; height: 7%;z-index:2;">Saintly Professions
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/sain345.png' style="position:absolute;left: 58%; top: 32.5%; z-index:1;">
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/asmr-audio-tour.html"><div class ="p" style="left: 45%; top: 12%; width: 20%; height: 7%;z-index:2;">ASMR Audio Tour
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/asadf42mr.png' style="position:absolute;left: 54%; top: 18%; z-index:1;">
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/crazy-eights.html"><div class ="p" style="left: 1%; top: 80%; width: 20%; height: 7%;z-index:2;">Crazy Eights
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/twoi3456.png' style="position:absolute;left: 20%; top: 79%; z-index:1;">
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="puzzle/permuted-paths.html"><div class ="p" style="left: 20%; top: 47%; width: 20%; height: 7%;z-index:2;">Permuted Paths
+          <br>
+          
+        </div>
+        </a>
+        <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/perma12.png' style="position:absolute;left: 33%; top: 34%; z-index:1;">
+        
+      
+    </div>
+    </div>
+    
+  
+
+  
+    
+    
+    <div id="NGA" class="tabcontent">
+    <div id="map" style="height:81.5vw;max-height:1200px;top:0%;left:0%;">
+    <img src='http://www.umdpuzzle.club/static/images/puzzlepage/mapdfsgw45s2.png' class="base" style="width:100%;  box-shadow: 12px 12px;">
+      
+        
+          <a href="puzzle/legendary-escape.html"><div class ="p" style="left: 4%; top: 9%; width: 25%; height: 7%;z-index:2;">META: Legendary Escape
+            <br>
+            
+          </div>
+          </a>
+          <img src='http://www.umdpuzzle.club/static/images/puzzlepage/arrows/nycou563.png' style="position:absolute;left: 28%; top: 12%;z-index:1;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+    </div>
+    </div>
+    
+  
+
+  
+
+
+  <table class="gph-list-table" style="min-width: 80%; max-width:80%; margin-left:auto; margin-right:auto">
+    <col style="width: 50%">
+    <col style="width: 35%">
+    <tr>
+      <th>Puzzle</th>
+      <th>Answer</th>
+    </tr>
+  </table>
+
+  
+    
+    <h4>National Mall</h4>
+    <p style="font-size:85%;"><i>Our final project is in D.C., but where’s the class?</i> <a class="resource" href="story.html">Read More</a></p>
+    
+
+    <table class="gph-list-table" style="min-width: 80%; max-width:80%; margin-left:auto; margin-right:auto">
+      <col style="width: 50%">
+      <col style="width: 45%">
+      
+      <tr>
+        <td><a href="puzzle/air-and-space.html">National Air and Space Museum</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/american-history.html">National Museum of American History</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/national-zoo.html">National Zoo</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/natural-history.html">National Museum of Natural History</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/african-american-history.html">National Museum of African American History and Culture</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/postal-museum.html">National Postal Museum</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/american-indian.html">National Museum of the American Indian</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/national-gallery-of-art.html">META: National Gallery of Art</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+    </table>
+  
+
+  
+    
+    <h4>National Gallery of Art</h4>
+    <p style="font-size:85%;"><i>We’ve got to steal the Ginevra! Time to prepare the galleries…</i> <a class="resource" href="story.html">Read More</a></p>
+    
+
+    <table class="gph-list-table" style="min-width: 80%; max-width:80%; margin-left:auto; margin-right:auto">
+      <col style="width: 50%">
+      <col style="width: 45%">
+      
+      <tr>
+        <td><a href="puzzle/new-york-counterpoint.html">New York Counterpoint</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/the-runaround-puzzle.html">The Runaround Puzzle</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/mortal-snake.html">Mortal Snake</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/delightfully-devilish.html">Delightfully Devilish</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/recycled.html">Recycled</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/tactile-inference.html">Tactile Inference</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/off-by-one-error.html">Off-by-One Error</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/evening-posts.html">Evening Posts</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/splitting-at-the-seams.html">Splitting at the Seams</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/blasted.html">BLASTED</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/severely-mangled-semantics.html">Severely Mangled Semantics</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/viewfinder.html">Viewfinder</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/saintly-professions.html">Saintly Professions</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/asmr-audio-tour.html">ASMR Audio Tour</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/crazy-eights.html">Crazy Eights</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+      <tr>
+        <td><a href="puzzle/permuted-paths.html">Permuted Paths</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+    </table>
+  
+
+  
+    
+    <h4>Getaway</h4>
+    <p style="font-size:85%;"><i>We’ve snatched the painting, but we weren’t as sneaky as we thought.</i> <a class="resource" href="story.html">Read More</a></p>
+    
+
+    <table class="gph-list-table" style="min-width: 80%; max-width:80%; margin-left:auto; margin-right:auto">
+      <col style="width: 50%">
+      <col style="width: 45%">
+      
+      <tr>
+        <td><a href="puzzle/legendary-escape.html">META: Legendary Escape</a></td>
+        <td>
+          
+            </td>
+          </tr>
+        
+    </table>
+  
+
+  
+
+
+<script>
+function openPage(evt, pageName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(pageName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("NatMall").click();
+document.getElementById("sdfghms").click();
+
+</script>
+
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.umdpuzzle.club/puzzles by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:21 GMT -->
+</html>

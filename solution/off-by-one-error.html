@@ -1,0 +1,242 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.umdpuzzle.club/solution/off-by-one-error by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  
+<title>Solution: Off-by-One Error</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700"/>
+  <link rel="stylesheet" href="../static/css/skeleton.css">
+  <link rel="stylesheet" href="../static/css/base.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="../static/js/sorttable.js"></script>
+  <script src="../static/js/tray.js"></script>
+  <script src="../static/js/hints.js"></script>
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+  
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+  
+  <nav>
+    <span class="tray">
+      <div class="top-tabs">
+        <a href="../index.html">
+        Home
+        </a>
+        <a href="../rules.html">
+        Rules
+        </a>
+        
+          <a href="../story.html">
+          Story
+          </a>
+        
+        
+          <a class="selected-tab" href="../puzzles.html">
+          Puzzles
+          </a>
+        
+        <a href="../teams.html">
+        Teams
+        </a>
+        <a href="../faq.html">
+        FAQ
+        </a>
+        
+        
+          <a href="../wrapup.html">
+          Wrap-Up
+          </a>
+        
+        <a href="../archive.html">
+        Archive
+        </a>
+      </div>
+      <div class="top-left-actions">
+        
+<a href="../puzzle/off-by-one-error.html" class="btn">Back to the puzzle</a>
+
+      </div>
+    </span>
+      <div class="top-right-actions">
+  
+</div>
+</nav>
+
+<div class="content">
+  
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Off-by-One Error
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">LAUNCH</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Ryan Thomas
+
+    </h4>
+
+    
+    <style>
+  td {
+    padding: 10px 13px;
+  }
+  a.resource {
+    color:inherit;
+    border-bottom: 0px solid #ffe98d;
+    box-shadow: 0px -7px 0px #ffe98d inset;
+    text-decoration-color: #FFFFFF;
+    text-decoration: none !important;
+  }
+</style>
+
+<p>
+  These logic puzzles must be solved while concurrently determining which rows and columns have been shifted up. Each shift can be thought of as a bit: 1 is a shift; 0 is a non-shift. The 5 bits along either axis of each logic puzzle can be converted into 2 binary numbers between 1 and 26.
+</p>
+
+<p>
+  Converting these numbers to A1Z26 gives the phrase: ROCKET TAKE OFF SIX
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Puzzle</th>
+<th>Col shifts</th>
+<th>Row shifts</th>
+<th>Letters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skyscraper 1</td>
+<td>1 0 0 1 0</td>
+<td>0 1 1 1 1</td>
+<td>RO</td>
+</tr>
+<tr>
+<td>Skyscraper 2</td>
+<td>0 0 0 1 1</td>
+<td>0 1 0 1 1</td>
+<td>CK</td>
+</tr>
+<tr>
+<td>Killer Sudoku 1</td>
+<td>0 0 1 0 1</td>
+<td>1 0 1 0 0</td>
+<td>ET</td>
+</tr>
+<tr>
+<td>Killer Sudoku 2</td>
+<td>1 0 1 0 0</td>
+<td>0 0 0 0 1</td>
+<td>TA</td>
+</tr>
+<tr>
+<td>Shikaku 1</td>
+<td>0 1 0 1 1</td>
+<td>0 0 1 0 1</td>
+<td>KE</td>
+</tr>
+<tr>
+<td>Shikaku 2</td>
+<td>0 1 1 1 1</td>
+<td>0 0 1 1 0</td>
+<td>OF</td>
+</tr>
+<tr>
+<td>Slitherlink 1</td>
+<td>0 0 1 1 0</td>
+<td>1 0 0 1 1</td>
+<td>FS</td>
+</tr>
+<tr>
+<td>Slitherlink 2</td>
+<td>0 1 0 0 1</td>
+<td>1 1 0 0 0</td>
+<td>IX</td>
+</tr>
+<tr>
+<td><p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>This clues the answer: <span class="solved-title-answer">LAUNCH</span></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+    
+
+    
+
+    
+
+    
+    <hr>
+    <p><a class="resource" href="https://docs.google.com/spreadsheets/d/19NF6tFUioAarA07fLk8rlAluMSszff1sHnEYweKteM0/edit?usp=sharing">Full Solution Guide</a></p>
+
+<p>
+Below are brief tips on how to figure out which rows and columns have been shifted, as well as the solutions.
+</p>
+
+<h4>Skyscrapers:</h4>
+
+<ul><li>Realize that a 9 must be in each row/column, which limits the number of larger numbers that can occur on a given side.</li><ul><li>For example, there can be at most one 9 on a side. Likewise, there can be at most two values greater than or equal to 8, at most three values >=7, … at most seven values >=3, and at most eight values >= 2.</li></ul></ul>
+
+<p><img src="http://www.umdpuzzle.club/static/puzzle_resources/solution_resources/off-by-one/skyscraps.png" style="width: 75%; margin-left:auto; margin-right:auto;"><h4>Killer Sudoku:</h4><ul><li>Realize each row, column, and nonet (also known as “groups”) must sum to 45. If cages are contained in a given group or in several continuous groups, the difference between the expected sum and the sum of the cages is the number of cages affected by the shifts.</li><ul><li>E.g. if a set of cages is contained between 2 nonets and the sum of the cages is 48, then 3 cages were shifted up.
+</li></ul></ul><img src="http://www.umdpuzzle.club/static/puzzle_resources/solution_resources/off-by-one/killersuds.png" style="width: 75%; margin-left:auto; margin-right:auto;"><h4>Shikaku:</h4><ul><li>Look for cells that can only be contained by 1 number</li><li>Look for cells that are always contained by numbers, regardless of shifts and positioning</li></ul><img src="http://www.umdpuzzle.club/static/puzzle_resources/solution_resources/off-by-one/shikas.png" style="width: 75%; margin-left:auto; margin-right:auto;"><h4>Slitherlink:</h4><ul><li>A cell with 0 forces a 0 shift</li><li>A cell with 4 forces a 1 shift</li></ul><img src="http://www.umdpuzzle.club/static/puzzle_resources/solution_resources/off-by-one/slithers.png" style="width: 75%; margin-left:auto; margin-right:auto;"></p>
+    
+      
+</main>
+
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.umdpuzzle.club/solution/off-by-one-error by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:33 GMT -->
+</html>

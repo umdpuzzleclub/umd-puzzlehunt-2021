@@ -1,0 +1,196 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.umdpuzzle.club/solution/mortal-snake by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  
+<title>Solution: Mortal Snake</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700"/>
+  <link rel="stylesheet" href="../static/css/skeleton.css">
+  <link rel="stylesheet" href="../static/css/base.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="../static/js/sorttable.js"></script>
+  <script src="../static/js/tray.js"></script>
+  <script src="../static/js/hints.js"></script>
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+  
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+  
+  <nav>
+    <span class="tray">
+      <div class="top-tabs">
+        <a href="../index.html">
+        Home
+        </a>
+        <a href="../rules.html">
+        Rules
+        </a>
+        
+          <a href="../story.html">
+          Story
+          </a>
+        
+        
+          <a class="selected-tab" href="../puzzles.html">
+          Puzzles
+          </a>
+        
+        <a href="../teams.html">
+        Teams
+        </a>
+        <a href="../faq.html">
+        FAQ
+        </a>
+        
+        
+          <a href="../wrapup.html">
+          Wrap-Up
+          </a>
+        
+        <a href="../archive.html">
+        Archive
+        </a>
+      </div>
+      <div class="top-left-actions">
+        
+<a href="../puzzle/mortal-snake.html" class="btn">Back to the puzzle</a>
+
+      </div>
+    </span>
+      <div class="top-right-actions">
+  
+</div>
+</nav>
+
+<div class="content">
+  
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Mortal Snake
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">RANINTO</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Ryan Thomas
+
+    </h4>
+
+    
+    <style>
+  a.resource {
+    color:inherit;
+    border-bottom: 0px solid #ffe98d;
+    box-shadow: 0px -7px 0px #ffe98d inset;
+    text-decoration-color: #FFFFFF;
+    text-decoration: none !important;
+  }
+</style>
+
+<p>
+  Although the puzzle is titled “Mortal Snake,” solvers are given a game titled “Immortal Snake.” Solvers should realize that it’s impossible to get a game over.
+</p>
+
+<p>The snake will automatically change its direction if it would run into an obstacle and die.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>If the snake would get a game over moving in any direction, a pause screen will load that can’t be unpaused: permanently softlocking the game.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> Because the game over screen never appears, the snake never technically dies and is therefore immortal.
+<p>
+  On the leaderboard, the initials of the bottom 9 players’ gamer handles spell out “GIT GUD THEN TRY AGAIN” (read horizontally, top to bottom), encouraging solvers to look at the gamer handles of players higher on the leaderboard.
+</p><p>
+  If players get the high score on the leaderboard, they’ll see the gamer handles of the top 9 players are alliterative. Reading the first letter of each username gives “OUROBOROS.”
+</p><p>
+  In the game, players must form an ouroboros, i.e. the snake must eat its own tail. To do this, the snake must eat a pellet on one frame (causing the tail to stay in place), then move the head on top of its tail on the next frame. Example below:
+</p><img src="http://www.umdpuzzle.club/static/puzzle_resources/solution_resources/snakes/ourobos.gif" style="width:50%;"><p>
+  When the snake eats its own tail, the game crashes and an error screen pops up warning that a “fatal error occured.”
+</p><img src="http://www.umdpuzzle.club/static/puzzle_resources/solution_resources/snakes/errorscreen.png" style="width:50%;"><p>
+  When the program reboots, there is now a version number next to the title. There are obstacles are strewn across the game board and a vibrating blue pellet is on the right. The snake doesn’t start moving automatically and can't be controlled with player input. Thankfully, our snake is still immortal and will never run into a wall or itself.
+  Players must guide the snake to form an ouroboros using the vibrating objects on the right side of the game board. Crashing the game and loads a new version of the game.
+</p><p><a class="resource" href="https://youtu.be/44F0vnHJNu4">The solutions to each level can be found here.</a></p><p>
+  Once solvers crash the game 9 times, the patch notes will say that immortality has been removed from the game. The title of the game is now “Mortal Snake,” i.e. the name of the puzzle. The snake can now die; and when it does, solvers can see the game over screen for the first time. Regardless of how the snake dies, a portion of the phrase describing how they died will be written in red (a color used nowhere else in the game). This phase, <span class="solved-title-answer">RAN INTO</span>, is the final answer.
+</p></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>When encountering an obstacle, the snake will automatically move following in a zigzag pattern based on the last turn it made. If a snake can’t follow the zigzag pattern, it’ll dodges in the opposite direction. For example, the snake’s default direction is east-south. If the snake is allowed to move on an empty border, it’ll turn south. When it reaches the bottom right hand corner, it tries to turn east but is unable, so it turns west, setting its direction to west-south. Likewise, when it reaches the bottom left hand corner, it tries to turn south but is unable, so it turns north, setting its direction to west-north.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>This is a reference to the <a class="resource" href="https://youtu.be/xOCurBYI_gY?t=910">Tetris AI</a> that does something similar when it is about to lose.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+    
+
+    
+    <hr>
+    <h4>Author&rsquo;s Notes</h4>
+    <p>
+  I started writing the basic code for a variant snake game in March 2020 but never landed on a specific mechanic. I decided a puzzle game that gives the answer to solvers when the game is complete would be best for “RAN INTO” because it’s a fragment sentence, which is unusual for answers. The answer also gave the game’s mechanic: the solution was to run into something, so the problem was that the game forbade you from running into anything!
+</p>
+
+<p>
+  I put several hotkeys in the game to help debug it faster that I left in the final game. Namely "Z" maxes the snake's speed. "ESC" can be used to exit every screen, including the error screen. Performing the Konami code (using the spacebar for "start") on the main menu will restart the game. Several teams complained that they couldn't restart or review previous levels, but this was intentional! You never need to go backwards in game to solve the puzzle, so I purposefully made it difficult to guide solvers to keep looking forward.
+</p>
+
+<p>
+  Several teams got stuck when they got to "Mortal Snake."  Originally there was flavor text saying "Submit anything written in red!" but this flavor text was ultimately removed because it was very unaesthetic. Most teams got the answer without flavor text, so I think it was the right that.
+</p>
+
+<p><a class="resource" href="https://www.youtube.com/watch?v=FtUiw77KhjM">Here's a video of me getting a perfect score of 97 on Mortal Snake.</a></p>
+
+<p>
+  Also, shout out to <a class="resource" href="https://www.youtube.com/user/Brackeys">Brackeys!</a> I’ve never made a full-fledged game in Unity before, and this YouTube channel was an invaluable resource.
+</p>
+    
+
+    
+
+    
+      
+</main>
+
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.umdpuzzle.club/solution/mortal-snake by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:33 GMT -->
+</html>

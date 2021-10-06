@@ -1,0 +1,372 @@
+
+
+
+
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.umdpuzzle.club/solution/saintly-professions by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  
+<title>Solution: Saintly Professions</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700"/>
+  <link rel="stylesheet" href="../static/css/skeleton.css">
+  <link rel="stylesheet" href="../static/css/base.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+  <script src="../static/js/sorttable.js"></script>
+  <script src="../static/js/tray.js"></script>
+  <script src="../static/js/hints.js"></script>
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
+  
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+  
+  <nav>
+    <span class="tray">
+      <div class="top-tabs">
+        <a href="../index.html">
+        Home
+        </a>
+        <a href="../rules.html">
+        Rules
+        </a>
+        
+          <a href="../story.html">
+          Story
+          </a>
+        
+        
+          <a class="selected-tab" href="../puzzles.html">
+          Puzzles
+          </a>
+        
+        <a href="../teams.html">
+        Teams
+        </a>
+        <a href="../faq.html">
+        FAQ
+        </a>
+        
+        
+          <a href="../wrapup.html">
+          Wrap-Up
+          </a>
+        
+        <a href="../archive.html">
+        Archive
+        </a>
+      </div>
+      <div class="top-left-actions">
+        
+<a href="../puzzle/saintly-professions.html" class="btn">Back to the puzzle</a>
+
+      </div>
+    </span>
+      <div class="top-right-actions">
+  
+</div>
+</nav>
+
+<div class="content">
+  
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Saintly Professions
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">VOWTOBRITAIN</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Sam Lam, with ideas from Dawson Do
+
+    </h4>
+
+    
+    <style>
+  td {
+    padding: 10px 13px;
+  }
+</style>
+
+<p>
+  Each of the strings consist of the names of two Catholic saints (as the title indicates) with their letters interleaved. The first X letters of one name appear uninterrupted; then, the first X letters of the second name also appear uninterrupted; finally, the rest of the letters of both names alternate. X will be used as an index at the last step.
+</p>
+
+<p>
+  Each pair of saints shares a common profession of patronage (as the title indicates). Each profession corresponds to one of the Livery Companies of the City of London, almost all of which are titled “Worshipful Company of X” where X is a profession. This is clued in the flavor text with the exact words “worshipful” and “company”, as well as a reference to guilds in “gilded”.
+</p>
+
+<p>
+  To help in determining the right companies, the clues have been given in order so that the names of the professions according to how they are written in the name of the company (such as “Chartered Secretaries and Administrators” instead of just “secretaries”) are all in alphabetical order.
+</p>
+
+<p>
+  The separated names and corresponding professions are as follows:
+</p>
+
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Orig</th>
+<th>St. 1</th>
+<th>St. 2</th>
+<th>Substr</th>
+<th>Worshipful Company</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>BARBGEORAGREA</td>
+<td>BARBARA</td>
+<td>GEORGE</td>
+<td>4</td>
+<td>Armourers and Brasiers</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CRLOASREE</td>
+<td>CLARE</td>
+<td>ROSE</td>
+<td>1</td>
+<td>Broderers</td>
+</tr>
+<tr>
+<td>3</td>
+<td>CATHECLAUDREINE</td>
+<td>CATHERINE</td>
+<td>CLAUDE</td>
+<td>5</td>
+<td>Chartered Secretaries and Administrators</td>
+</tr>
+<tr>
+<td>4</td>
+<td>CRISPPETERIN</td>
+<td>CRISPIN</td>
+<td>PETER</td>
+<td>5</td>
+<td>Cordwainers</td>
+</tr>
+<tr>
+<td>5</td>
+<td>BENEPATRDIICCKT</td>
+<td>BENEDICT</td>
+<td>PATRICK</td>
+<td>4</td>
+<td>Engineers</td>
+</tr>
+<tr>
+<td>6</td>
+<td>FRKAATNECRIIS</td>
+<td>FRANCIS</td>
+<td>KATERI</td>
+<td>2</td>
+<td>Environmental Cleaners</td>
+</tr>
+<tr>
+<td>7</td>
+<td>JOHELINGBIAUPSTIST</td>
+<td>JOHNBAPTIST</td>
+<td>ELIGIUS</td>
+<td>3</td>
+<td>Farriers</td>
+</tr>
+<tr>
+<td>8</td>
+<td>VEHURNONNAICA</td>
+<td>VERONICA</td>
+<td>HUNNA</td>
+<td>2</td>
+<td>Launderers</td>
+</tr>
+<tr>
+<td>9</td>
+<td>THOMYVESASMORE</td>
+<td>THOMASMORE</td>
+<td>YVES</td>
+<td>4</td>
+<td>Solicitors</td>
+</tr>
+<tr>
+<td>10</td>
+<td>FRANCIJOHNBOSSSCAOLES</td>
+<td>FRANCISSALES</td>
+<td>JOHNBOSCO</td>
+<td>6</td>
+<td>Stationers and Newspaper Makers</td>
+</tr>
+<tr>
+<td>11</td>
+<td>VSITNECPEHNATNFERRER</td>
+<td>VINCENTFERRER</td>
+<td>STEPHEN</td>
+<td>1</td>
+<td>Tylers and Bricklayers</td>
+</tr>
+<tr>
+<td>12</td>
+<td>AUMRABNADN</td>
+<td>AMAND</td>
+<td>URBAN</td>
+<td>1</td>
+<td>Vintners</td>
+</tr>
+</tbody>
+</table>
+<p>
+  The livery companies have a strict order of precedence, which can be used to reorder the clues. This way, when the index X from earlier is used as an index into the profession, the answer <span class="solved-title-answer">VOW TO BRITAIN</span> will be spelled out.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Livery #</th>
+<th>Worshipful Company</th>
+<th>Orig</th>
+<th>Substr</th>
+<th>Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td>Vintners</td>
+<td>AUMRABNADN</td>
+<td>1</td>
+<td>V</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Armourers and Brasiers</td>
+<td>BARBGEORAGREA</td>
+<td>4</td>
+<td>O</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Cordwainers</td>
+<td>CRISPPETERIN</td>
+<td>5</td>
+<td>W</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Tylers and Bricklayers</td>
+<td>VSITNECPEHNATNFERRER</td>
+<td>1</td>
+<td>T</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Stationers and Newspaper Makers</td>
+<td>FRANCIJOHNBOSSSCAOLES</td>
+<td>6</td>
+<td>O</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Broderers</td>
+<td>CRLOASREE</td>
+<td>1</td>
+<td>B</td>
+</tr>
+<tr>
+<td>55</td>
+<td>Farriers</td>
+<td>JOHELINGBIAUPSTIST</td>
+<td>3</td>
+<td>R</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Solicitors</td>
+<td>THOMYVESASMORE</td>
+<td>4</td>
+<td>I</td>
+</tr>
+<tr>
+<td>87</td>
+<td>Chartered Secretaries and Administrators</td>
+<td>CATHECLAUDREINE</td>
+<td>5</td>
+<td>T</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Launderers</td>
+<td>VEHURNONNAICA</td>
+<td>2</td>
+<td>A</td>
+</tr>
+<tr>
+<td>94</td>
+<td>Engineers</td>
+<td>BENEPATRDIICCKT</td>
+<td>4</td>
+<td>I</td>
+</tr>
+<tr>
+<td>97</td>
+<td>Environmental Cleaners</td>
+<td>FRKAATNECRIIS</td>
+<td>2</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+
+    
+
+    
+    <hr>
+    <h4>Author&rsquo;s Notes</h4>
+    <p>This marks my second British-inspired puzzle after the Mornington Crescent puzzle from last year. Similarly, New York Counterpoint marks my second music-inspired puzzle after the Tonnetz puzzle from 2019. The flavor text for this puzzle was not written very well. Similarly, the flavor text of New York Counterpoint was not written very well.</p>
+    
+
+    
+
+    
+      
+</main>
+
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.umdpuzzle.club/solution/saintly-professions by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:33 GMT -->
+</html>
