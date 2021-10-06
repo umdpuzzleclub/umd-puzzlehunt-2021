@@ -9,7 +9,7 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
   <meta charset="utf-8">
-  
+
 <title>Call in: Permuted Paths</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=0.5">
@@ -27,14 +27,14 @@
   <script src="../static/js/tray.js"></script>
   <script src="../static/js/hints.js"></script>
   <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/favicon.ico" type="image/vnd.microsoft.icon">
-  
+
 <script>
   /* FIXME */
 </script>
 
 </head>
 <body>
-  
+
   <nav>
     <span class="tray">
       <div class="top-tabs">
@@ -44,74 +44,109 @@
         <a href="../rules.html">
         Rules
         </a>
-        
+
           <a href="../story.html">
           Story
           </a>
-        
-        
+
+
           <a class="selected-tab" href="../puzzles.html">
           Puzzles
           </a>
-        
+
         <a href="../teams.html">
         Teams
         </a>
         <a href="../faq.html">
         FAQ
         </a>
-        
-        
+
+
           <a href="../wrapup.html">
           Wrap-Up
           </a>
-        
+
         <a href="../archive.html">
         Archive
         </a>
       </div>
       <div class="top-left-actions">
-        
+
 <a href="../puzzle/permuted-paths.html" class="btn">Back to the puzzle</a>
 
       </div>
     </span>
       <div class="top-right-actions">
-  
+
 </div>
 </nav>
 
 <div class="content">
-  
+
 
 <h1>Check your answer for Permuted Paths</h1>
 
 <main>
-    
 
-    
+
+
 
     <form class="call-in-answer-panel">
-        
+
         <div class="row">
             <div class="four columns">
                 <label for="id_answer">Enter your guess:</label>
             </div>
             <div class="four columns">
                 <input type="text" name="answer" maxlength="500" required id="id_answer">
-                
+
             </div>
             <div class="four columns">
                 <button class="btn" type="submit">Submit</button>
             </div>
         </div>
-        
+
     </form>
 </main>
 
 
 </div>
+<script id="check_answer">
+  function normalize_puzzle_answer(answer) {
+    return answer.toUpperCase().replace(/[^A-Z]/g, '');
+  }
 
+  window.onload = function() {
+    form = document.getElementsByClassName('call-in-answer-panel')[0];
+    form.onsubmit = function() {
+      right_answer = 'FURLONG';
+      answer = document.getElementById('id_answer').value;
+      answer = normalize_puzzle_answer(answer);
+
+      // Remove solved panel if it exists
+      if (document.contains(document.getElementById('solved-panel'))) {
+        document.getElementById("solved-panel").remove();
+      }
+
+      // Create new solved panel
+      node = document.createElement('div');
+      node.setAttribute('id', 'solved-panel');
+      if (answer == right_answer) {
+        node.setAttribute('class', 'solved-panel');
+        node.innerHTML = "<h3>Solved!</h3>\n<p>The answer was <b>" + right_answer + "</b>.</p>";
+      } else {
+        node.setAttribute('class', 'solved-panel solved-panel--incorrect');
+        node.innerHTML = "<h3>Incorrect!</h3>";
+      }
+
+      // Inject it
+      form.parentNode.insertBefore(node, form);
+
+      // Return false to prevent GET request from executing
+      return false;
+    }
+  }
+</script>
 </body>
 
 <!-- Mirrored from www.umdpuzzle.club/post-hunt-solve/permuted-paths by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 00:55:33 GMT -->
